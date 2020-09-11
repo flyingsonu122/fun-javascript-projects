@@ -3,23 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./style.css">
+
     <title>Quick Tip</title>
 </head>
 <body>
-    <main>
+    <main id="container">
         <h1>Quick Tip</h1>
         <section>
             <div class="bill">
                 <label for="yourBill">Bill</label>
-                <input type="number" placeholder="Your Bill" id="yourBill">
+                <input type="number" placeholder="Your Bill" id="yourBill" >
             </div>
             <div>
                 <div class="space-between">
                     <label for="tipInput">Select Tip</label>
-                    <span id="tipPercent">0%</span>
+                    <span id="tipPercent"></span>
                 </div>
-                <input type="range" value="0" id="tipInput">
+                <input type="range" value="0" id="tipInput" class="range">
             </div>
             <div class="space-between">
                 <span>Tip</span>
@@ -35,13 +38,13 @@
             <div>
                 <div class="space-between">
                     <label for="splitInput">Split</label>
-                    <span id="splitValue">1 Person</span>
+                    <span id="splitValue"></span>
                 </div>
-                <input type="range" min="1" max="10" value="1" id="splitInput">
+                <input type="range" min="1" max="10" value="1" id="splitInput" class="range">
             </div>
             <div class="space-between">
                 <span>Bill Each</span>
-                <span id="splitEach"></span>
+                <span id="billEach"></span>
             </div>
             <div class="space-between">
                 <span>Tip Each</span>
@@ -49,5 +52,7 @@
             </div>
         </section>
     </main>
+    
+    <script src="./main.js"></script>
 </body>
-</html>
+</html> 
